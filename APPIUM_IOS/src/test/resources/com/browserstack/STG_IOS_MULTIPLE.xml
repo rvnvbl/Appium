@@ -1,0 +1,649 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Parallel" preserve-order="true">
+	<!--   
+	<test name="ParallelTestiPhoneXS">
+    <parameter name="deviceIndex" value="0"/>
+        <classes>
+            <class name="TC1_Login_iOS"/>
+            <class name="TC3_Delivery_iOS"/>
+            <class name="TC4_AddToCart_iOS"/>
+            <class name="TC4_1AddToCart_StoreHomePage_iOS"/>
+            <class name="TC5_Cart_iOS"/>
+        </classes>
+    </test>
+
+    <test name="ParallelTestiPhone12Pro">
+    <parameter name="deviceIndex" value="1"/>
+        <classes>
+            <class name="TC6_Checkout_inStore_iOS"/>
+            <class name="TC6_1_Checkout_Delivery_iOS"/>
+            <class name="TC7_PlaceOrder_InStore_GCash"/>
+            <class name="TC7_1_PlaceOrder_InStore_InStorePayment"/>
+            <class name="TC7_2_PlaceOrder_InStore_CreditDebitCard"/>
+            <class name="TC7_3_PlaceOrder_InStore_ZeroPayment"/>
+            <class name="TC7_4_PlaceOrder_InStore_PWallet"/>
+            <class name="TC8_PlaceOrder_Delivery_GCash"/>
+            <class name="TC8_1_PlaceOrder_Delivery_COD"/>
+            <class name="TC8_2_PlaceOrder_Delivery_CreditDebitCard"/>
+            <class name="TC8_3_PlaceOrder_Delivery_ZeroPayment"/>
+            <class name="TC8_4_PlaceOrder_Delivery_PWallet"/>
+            
+
+            <class name="TC9_Orders_Reorder_iOS"/>
+            <class name="TC9_1_Orders_CancelOrder_iOS"/>       //Not Working
+            
+            
+            <class name="TC10_Wallet_SignUp_iOS"/>
+            <class name="TC10_1_Wallet_CashIn_inStore_iOS"/>
+            <class name="TC10_2_Wallet_CashIn_GCash_iOS"/>
+            <class name="TC10_3_Wallet_CashIn_CreditDebit_iOS"/>	
+            <class name="TC11_DonationDrive_RegularUser_iOS"/>
+            <class name="TC11_1_DonationDrive_GuestUser_iOS"/>
+            <class name="TC12_PureTreats_TreatForMe_iOS"/>
+            <class name="TC12_1_PureTreats_TreatForFriend_iOS"/>
+            <class name="TC13_BillsPay_ecBills_iOS"/>
+            <class name="TC13_1_BillsPay_ecCash_iOS"/>
+            <class name="TC14_LoyaltyCard_Application_TNAP_iOS"/>
+            <class name="TC14_1_LoyaltyCard_Application_PERKS_iOS"/>
+            <class name="TC15_1_BuyLoad_MobileData_iOS"/>  
+            <class name="TC16_0_MyAccount_myProfile"/>      
+            <class name="TC15_1_BuyLoad_MobileData_iOS"/>                   
+            <class name="TC15_1_BuyLoad_MobileData_iOS"/>      
+            
+            <class name="TC16_0_MyAccount_myProfile"/> 
+            <class name="TC16_1_MyAccount_MyVouchers"/>
+            <class name="TC16_2_MyAccount_Senior_PWD"/>
+            <class name="TC16_3_MyAccount_Address"/>
+            <class name="TC17_1_AskSally_GeneralInquiry"/>
+            <class name="TC18_Wallet_iOS_FundTransfer_SendViaID"/>
+            <class name="TC18_1_Wallet_iOS_FundTransfer_SendviaQR"/>     
+            <class name="TC18_2_Wallet_iOS_FundTransfer_RecieveViaQR"/> 
+            <class name="TC18_3_Wallet_iOS_FundTransfer_Favorites"/>
+            <class name="TC19_1_CaseOrder_ProductDetails"/>
+            <class name="TC20_Cart_ReplacementItem_AdvancedSearch"/>             
+        </classes>
+	*****************************************************************************************************************************************
+	
+	
+	
+	END-T0-END
+	<test name="TC1_Login_iOS" preserve-order="true">
+		<parameter name="deviceIndex" value="2" />
+		<classes>
+			<class name="TC1_Login_iOS" />
+		</classes>
+	</test>
+	<test name="TC3_Delivery_iOS" preserve-order="true">
+		<parameter name="deviceIndex" value="2" />
+		<classes>
+			<class name="TC3_Delivery_iOS" />
+		</classes>
+	</test>
+	<test name="TC4_AddToCart_iOS" preserve-order="true">
+		<parameter name="deviceIndex" value="2" />
+		<classes>
+			<class name="TC4_AddToCart_iOS" />
+		</classes>
+	</test>
+	<test name="TC5_Cart_iOS" preserve-order="true">
+		<parameter name="deviceIndex" value="2" />
+		<classes>
+			<class name="TC5_Cart_iOS" />
+		</classes>
+	</test>
+	<test name="TC6_Checkout_inStore_iOS" preserve-order="true">
+		<parameter name="deviceIndex" value="2" />
+		<classes>
+			<class name="TC6_Checkout_inStore_iOS" />
+		</classes>
+	</test>
+	<test name="TC6_1_Checkout_Delivery_iOS" preserve-order="true">
+		<parameter name="deviceIndex" value="2" />
+		<classes>
+			<class name="TC6_1_Checkout_Delivery_iOS" />
+		</classes>
+	</test>
+	<test name="TC7_PlaceOrder_InStore_GCash" preserve-order="true">
+		<parameter name="deviceIndex" value="2" />
+		<classes>
+			<class name="TC7_PlaceOrder_InStore_GCash" />
+		</classes>
+	</test>
+	<test name="TC7_1_PlaceOrder_InStore_InStorePayment" preserve-order="true">
+		<parameter name="deviceIndex" value="2" />
+		<classes>
+			<class name="TC7_1_PlaceOrder_InStore_InStorePayment" />
+		</classes>
+	</test>
+	<test name="TC7_2_PlaceOrder_InStore_CreditDebitCard" preserve-order="true">
+		<parameter name="deviceIndex" value="2" />
+		<classes>
+			<class name="TC7_2_PlaceOrder_InStore_CreditDebitCard" />
+		</classes>
+	</test>
+	<test name="TC7_3_PlaceOrder_InStore_ZeroPayment" preserve-order="true">
+		<parameter name="deviceIndex" value="2" />
+		<classes>
+			<class name="TC7_3_PlaceOrder_InStore_ZeroPayment" />
+		</classes>
+	</test>
+	<test name="TC7_4_PlaceOrder_InStore_PWallet" preserve-order="true">
+		<parameter name="deviceIndex" value="2" />
+		<classes>
+			<class name="TC7_4_PlaceOrder_InStore_PWallet" />
+		</classes>
+	</test>
+	<test name="TC8_PlaceOrder_Delivery_GCash" preserve-order="true">
+		<parameter name="deviceIndex" value="2" />
+		<classes>
+			<class name="TC8_PlaceOrder_Delivery_GCash" />
+		</classes>
+	</test>
+	<test name="TC8_1_PlaceOrder_Delivery_COD" preserve-order="true">
+		<parameter name="deviceIndex" value="2" />
+		<classes>
+			<class name="TC8_1_PlaceOrder_Delivery_COD" />
+		</classes>
+	</test>
+	<test name="TC8_2_PlaceOrder_Delivery_CreditDebitCard" preserve-order="true">
+		<parameter name="deviceIndex" value="2" />
+		<classes>
+			<class name="TC8_2_PlaceOrder_Delivery_CreditDebitCard" />
+		</classes>
+	</test>
+	<test name="TC8_3_PlaceOrder_Delivery_ZeroPayment" preserve-order="true">
+		<parameter name="deviceIndex" value="2" />
+		<classes>
+			<class name="TC8_3_PlaceOrder_Delivery_ZeroPayment" />
+		</classes>
+	</test>
+	<test name="TC8_4_PlaceOrder_Delivery_PWallet" preserve-order="true">
+		<parameter name="deviceIndex" value="2" />
+		<classes>
+			<class name="TC8_4_PlaceOrder_Delivery_PWallet" />
+		</classes>
+	</test>
+	<test name="TC9_Orders_Reorder_iOS" preserve-order="true">
+		<parameter name="deviceIndex" value="2" />
+		<classes>
+			<class name="TC9_Orders_Reorder_iOS"/>
+		</classes>
+	</test>
+	
+	
+	<test name="TC10_Wallet_SignUp_iOS" preserve-order="true">
+		<parameter name="deviceIndex" value="2" />
+		<classes>
+			<class name="TC10_Wallet_SignUp_iOS" />
+		</classes>
+	</test>
+	<test name="TC10_1_Wallet_CashIn_inStore_iOS" preserve-order="true">
+		<parameter name="deviceIndex" value="2" />
+		<classes>
+			<class name="TC10_1_Wallet_CashIn_inStore_iOS" />
+		</classes>
+	</test>
+	<test name="TC10_2_Wallet_CashIn_GCash_iOS" preserve-order="true">
+		<parameter name="deviceIndex" value="2" />
+		<classes>
+			<class name="TC10_2_Wallet_CashIn_GCash_iOS" />
+		</classes>
+	</test>
+	<test name="TC10_3_Wallet_CashIn_CreditDebit_iOS" preserve-order="true">
+		<parameter name="deviceIndex" value="2" />
+		<classes>
+			<class name="TC10_3_Wallet_CashIn_CreditDebit_iOS" />
+		</classes>
+	</test>
+	<test name="TC11_DonationDrive_RegularUser_iOS" preserve-order="true">
+		<parameter name="deviceIndex" value="2" />
+		<classes>
+			<class name="TC11_DonationDrive_RegularUser_iOS" />
+		</classes>
+	</test>
+	<test name="TC11_1_DonationDrive_GuestUser_iOS" preserve-order="true">
+		<parameter name="deviceIndex" value="2" />
+		<classes>
+			<class name="TC11_1_DonationDrive_GuestUser_iOS" />
+		</classes>
+	</test>
+	<test name="TC12_PureTreats_TreatForMe_iOS" preserve-order="true">
+		<parameter name="deviceIndex" value="2" />
+		<classes>
+			<class name="TC12_PureTreats_TreatForMe_iOS" />
+		</classes>
+	</test>
+	<test name="TC12_1_PureTreats_TreatForFriend_iOS" preserve-order="true">
+		<parameter name="deviceIndex" value="2" />
+		<classes>
+			<class name="TC12_1_PureTreats_TreatForFriend_iOS" />
+		</classes>
+	</test>
+	<test name="TC13_BillsPay_ecBills_iOS" preserve-order="true">
+		<parameter name="deviceIndex" value="2" />
+		<classes>
+			<class name="TC13_BillsPay_ecBills_iOS" />
+		</classes>
+	</test>
+	<test name="TC13_1_BillsPay_ecCash_iOS" preserve-order="true">
+		<parameter name="deviceIndex" value="2" />
+		<classes>
+			<class name="TC13_1_BillsPay_ecCash_iOS" />
+		</classes>
+	</test>
+	<test name="TC14_LoyaltyCard_Application_TNAP_iOS" preserve-order="true">
+		<parameter name="deviceIndex" value="2" />
+		<classes>
+			<class name="TC14_LoyaltyCard_Application_TNAP_iOS" />
+		</classes>
+	</test>
+
+	<test name="TC15_1_BuyLoad_MobileData_iOS" preserve-order="true">
+		<parameter name="deviceIndex" value="2" />
+		<classes>
+			<class name="TC15_1_BuyLoad_MobileData_iOS" />
+		</classes>
+	</test>
+	<test name="TC15_BuyLoad_RegularData_iOS" preserve-order="true">
+		<parameter name="deviceIndex" value="2" />
+		<classes>
+			<class name="TC15_BuyLoad_RegularData_iOS" />
+		</classes>
+	</test>
+
+<test name="TC16_0_MyAccount_myProfile" preserve-order="true">
+		<parameter name="deviceIndex" value="2" />
+		<classes>
+			<class name="TC16_0_MyAccount_myProfile" />
+		</classes>
+	</test>
+	
+	<test name="TC16_1_MyAccount_MyVouchers" preserve-order="true">
+		<parameter name="deviceIndex" value="2" />
+		<classes>
+			<class name="TC16_1_MyAccount_MyVouchers" />
+		</classes>
+	</test>
+	
+	<test name="TC16_2_MyAccount_Senior_PWD" preserve-order="true">
+		<parameter name="deviceIndex" value="2" />
+		<classes>
+			<class name="TC16_2_MyAccount_Senior_PWD" />
+		</classes>
+	</test>
+
+	<test name="TC16_3_MyAccount_Address" preserve-order="true">
+		<parameter name="deviceIndex" value="2" />
+		<classes>
+			<class name="TC16_3_MyAccount_Address" />
+		</classes>
+	</test>
+	
+	<test name="TC17_1_AskSally_GeneralInquiry" preserve-order="true">
+		<parameter name="deviceIndex" value="2" />
+		<classes>
+			<class name="TC17_1_AskSally_GeneralInquiry" />
+		</classes>
+	</test>
+	<test name="TC18_Wallet_iOS_FundTransfer_SendViaID" preserve-order="true">
+		<parameter name="deviceIndex" value="2" />
+		<classes>
+			<class name="TC18_Wallet_iOS_FundTransfer_SendViaID" />
+		</classes>
+	</test>
+	
+		<test name="TC18_1_Wallet_iOS_FundTransfer_SendviaQR" preserve-order="true">
+		<parameter name="deviceIndex" value="2" />
+		<classes>
+			<class name="TC18_1_Wallet_iOS_FundTransfer_SendviaQR" />
+		</classes>
+	</test>
+	
+<test name="TC19_CaseOrder_Homepage" preserve-order="true">
+		<parameter name="deviceIndex" value="2" />
+		<classes>
+			<class name="TC19_CaseOrder_Homepage" />
+		</classes>
+	</test>
+
+	<test name="TC19_1_CaseOrder_ProductDetails" preserve-order="true">
+		<parameter name="deviceIndex" value="2" />
+		<classes>
+			<class name="TC19_1_CaseOrder_ProductDetails" />
+		</classes>
+	</test>
+	
+test name="TC20_Cart_ReplacementItem_AdvancedSearch" preserve-order="true">
+		<parameter name="deviceIndex" value="2" />
+		<classes>
+			<class name="TC20_Cart_ReplacementItem_AdvancedSearch" />
+		</classes>
+	</test>
+	Negative Tests 
+	<test name="NegativeTesting.TC3_Negative_Address_Delivery_iOS"
+	preserve-order="true">
+		<parameter name="deviceIndex" value="2" />
+		<classes>
+			<class name="NegativeTesting.TC3_Negative_Address_Delivery_iOS" />
+		</classes>
+	</test>
+	<test name="NegativeTesting.TC10_1_Negative_Wallet__CashIn_inStore_iOS"
+	preserve-order="true">
+		<parameter name="deviceIndex" value="2" />
+		<classes>
+			<class name="NegativeTesting.TC10_1_Negative_Wallet__CashIn_inStore_iOS" />
+		</classes>
+	</test>
+	<test name="TC14_1_LoyaltyCard_Application_PERKS_iOS" preserve-order="true">
+		<parameter name="deviceIndex" value="2" />
+		<classes>
+			<class name="TC14_1_LoyaltyCard_Application_PERKS_iOS" />
+		</classes>
+	</test>
+	-->
+	<test name="TC1_Login_iOS" preserve-order="true">
+		<parameter name="deviceIndex" value="2" />
+		<classes>
+			<class name="TC1_Login_iOS" />
+		</classes>
+	</test>
+
+	<test name="TC3_Delivery_iOS" preserve-order="true">
+		<parameter name="deviceIndex" value="2" />
+		<classes>
+			<class name="TC3_Delivery_iOS" />
+		</classes>
+	</test>
+
+	<test name="TC4_AddToCart_Categories_iOS" preserve-order="true">
+		<parameter name="deviceIndex" value="2" />
+		<classes>
+			<class name="TC4_AddToCart_Categories_iOS" />
+		</classes>
+	</test>
+
+	<test name="TC4_1AddToCart_StoreHomePage_iOS" preserve-order="true">
+		<parameter name="deviceIndex" value="2" />
+		<classes>
+			<class name="TC4_1AddToCart_StoreHomePage_iOS" />
+		</classes>
+	</test>
+
+	<test name="TC5_Cart_iOS" preserve-order="true">
+		<parameter name="deviceIndex" value="2" />
+		<classes>
+			<class name="TC5_Cart_iOS" />
+		</classes>
+	</test>
+
+	<test name="TC6_Checkout_inStore_iOS" preserve-order="true">
+		<parameter name="deviceIndex" value="2" />
+		<classes>
+			<class name="TC6_Checkout_inStore_iOS" />
+		</classes>
+	</test>
+
+	<test name="TC6_1_Checkout_Delivery_iOS" preserve-order="true">
+		<parameter name="deviceIndex" value="2" />
+		<classes>
+			<class name="TC6_1_Checkout_Delivery_iOS" />
+		</classes>
+	</test>
+
+	<test name="TC7_PlaceOrder_InStore_GCash" preserve-order="true">
+		<parameter name="deviceIndex" value="2" />
+		<classes>
+			<class name="TC7_PlaceOrder_InStore_GCash" />
+		</classes>
+	</test>
+
+	<test name="TC7_1_PlaceOrder_InStore_InStorePayment" preserve-order="true">
+		<parameter name="deviceIndex" value="2" />
+		<classes>
+			<class name="TC7_1_PlaceOrder_InStore_InStorePayment" />
+		</classes>
+	</test>
+
+	<test name="TC7_2_PlaceOrder_InStore_CreditDebitCard" preserve-order="true">
+		<parameter name="deviceIndex" value="2" />
+		<classes>
+			<class name="TC7_2_PlaceOrder_InStore_CreditDebitCard" />
+		</classes>
+	</test>
+
+	<test name="TC7_4_PlaceOrder_InStore_PWallet" preserve-order="true">
+		<parameter name="deviceIndex" value="2" />
+		<classes>
+			<class name="TC7_4_PlaceOrder_InStore_PWallet" />
+		</classes>
+	</test>
+
+	<test name="TC8_PlaceOrder_Delivery_GCash" preserve-order="true">
+		<parameter name="deviceIndex" value="2" />
+		<classes>
+			<class name="TC8_PlaceOrder_Delivery_GCash" />
+		</classes>
+	</test>
+
+	<test name="TC8_1_PlaceOrder_Delivery_COD" preserve-order="true">
+		<parameter name="deviceIndex" value="2" />
+		<classes>
+			<class name="TC8_1_PlaceOrder_Delivery_COD" />
+		</classes>
+	</test>
+
+	<test name="TC8_2_PlaceOrder_Delivery_CreditDebitCard" preserve-order="true">
+		<parameter name="deviceIndex" value="2" />
+		<classes>
+			<class name="TC8_2_PlaceOrder_Delivery_CreditDebitCard" />
+		</classes>
+	</test>
+
+	<test name="TC8_4_PlaceOrder_Delivery_PWallet" preserve-order="true">
+		<parameter name="deviceIndex" value="2" />
+		<classes>
+			<class name="TC8_4_PlaceOrder_Delivery_PWallet" />
+		</classes>
+	</test>
+
+	<test name="TC9_Orders_Reorder_iOS" preserve-order="true">
+		<parameter name="deviceIndex" value="2" />
+		<classes>
+			<class name="TC9_Orders_Reorder_iOS" />
+		</classes>
+	</test>
+
+	<test name="TC10_Wallet_SignUp_iOS" preserve-order="true">
+		<parameter name="deviceIndex" value="2" />
+		<classes>
+			<class name="TC10_Wallet_SignUp_iOS" />
+		</classes>
+	</test>
+
+	<test name="TC10_1_Wallet_CashIn_inStore_iOS" preserve-order="true">
+		<parameter name="deviceIndex" value="2" />
+		<classes>
+			<class name="TC10_1_Wallet_CashIn_inStore_iOS" />
+		</classes>
+	</test>
+
+	<test name="TC12_PureTreats_TreatForMe_iOS" preserve-order="true">
+		<parameter name="deviceIndex" value="2" />
+		<classes>
+			<class name="TC12_PureTreats_TreatForMe_iOS" />
+		</classes>
+	</test>
+
+	<test name="TC12_1_PureTreats_TreatForFriend_iOS" preserve-order="true">
+		<parameter name="deviceIndex" value="2" />
+		<classes>
+			<class name="TC12_1_PureTreats_TreatForFriend_iOS" />
+		</classes>
+	</test>
+
+	<test name="TC13_BillsPay_ecBills_iOS" preserve-order="true">
+		<parameter name="deviceIndex" value="2" />
+		<classes>
+			<class name="TC13_BillsPay_ecBills_iOS" />
+		</classes>
+	</test>
+
+	<test name="TC13_1_BillsPay_ecCash_iOS" preserve-order="true">
+		<parameter name="deviceIndex" value="2" />
+		<classes>
+			<class name="TC13_1_BillsPay_ecCash_iOS" />
+		</classes>
+	</test>
+
+	<test name="TC15_1_BuyLoad_MobileData_iOS" preserve-order="true">
+		<parameter name="deviceIndex" value="2" />
+		<classes>
+			<class name="TC15_1_BuyLoad_MobileData_iOS" />
+		</classes>
+	</test>
+
+	<test name="TC15_BuyLoad_RegularData_iOS" preserve-order="true">
+		<parameter name="deviceIndex" value="2" />
+		<classes>
+			<class name="TC15_BuyLoad_RegularData_iOS" />
+		</classes>
+	</test>
+
+	<test name="TC16_0_MyAccount_myProfile" preserve-order="true">
+		<parameter name="deviceIndex" value="2" />
+		<classes>
+			<class name="TC16_0_MyAccount_myProfile" />
+		</classes>
+	</test>
+
+	<test name="TC16_2_MyAccount_Senior_PWD" preserve-order="true">
+		<parameter name="deviceIndex" value="2" />
+		<classes>
+			<class name="TC16_2_MyAccount_Senior_PWD" />
+		</classes>
+	</test>
+
+	<test name="TC16_3_MyAccount_Address" preserve-order="true">
+		<parameter name="deviceIndex" value="2" />
+		<classes>
+			<class name="TC16_3_MyAccount_Address" />
+		</classes>
+	</test>
+
+	<test name="TC17_1_AskSally_GeneralInquiry" preserve-order="true">
+		<parameter name="deviceIndex" value="2" />
+		<classes>
+			<class name="TC17_1_AskSally_GeneralInquiry" />
+		</classes>
+	</test>
+
+	<test name="TC18_Wallet_iOS_FundTransfer_SendViaID" preserve-order="true">
+		<parameter name="deviceIndex" value="2" />
+		<classes>
+			<class name="TC18_Wallet_iOS_FundTransfer_SendViaID" />
+		</classes>
+	</test>
+
+	<test name="TC18_1_Wallet_iOS_FundTransfer_SendviaQR" preserve-order="true">
+		<parameter name="deviceIndex" value="2" />
+		<classes>
+			<class name="TC18_1_Wallet_iOS_FundTransfer_SendviaQR" />
+		</classes>
+	</test>
+
+	<test name="TC18_2_Wallet_iOS_FundTransfer_RecieveViaQR"
+		preserve-order="true">
+		<parameter name="deviceIndex" value="2" />
+		<classes>
+			<class name="TC18_2_Wallet_iOS_FundTransfer_RecieveViaQR" />
+		</classes>
+	</test>
+
+	<test name="TC19_CaseOrder_Homepage" preserve-order="true">
+		<parameter name="deviceIndex" value="2" />
+		<classes>
+			<class name="TC19_CaseOrder_Homepage" />
+		</classes>
+	</test>
+
+	<test name="TC19_1_CaseOrder_ProductDetails" preserve-order="true">
+		<parameter name="deviceIndex" value="2" />
+		<classes>
+			<class name="TC19_1_CaseOrder_ProductDetails" />
+		</classes>
+	</test>
+
+	<test name="TC19_2_CaseOrder_ReorderandCancel" preserve-order="true">
+		<parameter name="deviceIndex" value="2" />
+		<classes>
+			<class name="TC19_2_CaseOrder_ReorderandCancel" />
+		</classes>
+	</test>
+
+	<test name="TC20_Cart_ReplacementItem_AdvancedSearch" preserve-order="true">
+		<parameter name="deviceIndex" value="2" />
+		<classes>
+			<class name="TC20_Cart_ReplacementItem_AdvancedSearch" />
+		</classes>
+	</test>
+
+	<test name="TC21_3_iOS_MaxAllocation_ProductDetails"
+		preserve-order="true">
+		<parameter name="deviceIndex" value="2" />
+		<classes>
+			<class name="TC21_3_iOS_MaxAllocation_ProductDetails" />
+		</classes>
+	</test>
+
+	<test name="TC21_2_iOS_MaxAllocation_CartPage"
+		preserve-order="true">
+		<parameter name="deviceIndex" value="2" />
+		<classes>
+			<class name="TC21_2_iOS_MaxAllocation_CartPage" />
+		</classes>
+	</test>
+
+	<test name="TC21_iOS_MaxAllocation_ViewAll"
+		preserve-order="true">
+		<parameter name="deviceIndex" value="2" />
+		<classes>
+			<class name="TC21_iOS_MaxAllocation_ViewAll" />
+		</classes>
+	</test>
+
+	<test name="TC21_1_iOS_MaxAllocation_StoreHomepage"
+		preserve-order="true">
+		<parameter name="deviceIndex" value="2" />
+		<classes>
+			<class name="TC21_1_iOS_MaxAllocation_StoreHomepage" />
+		</classes>
+	</test>
+
+	<test name="TC22_Wallet_iOS_PwalletEnhancement_Homepage"
+		preserve-order="true">
+		<parameter name="deviceIndex" value="2" />
+		<classes>
+			<class name="TC22_Wallet_iOS_PwalletEnhancement_Homepage" />
+		</classes>
+	</test>
+
+	<test name="TC22_1_Wallet_iOS_PwalletEnhancement_MyAccount"
+		preserve-order="true">
+		<parameter name="deviceIndex" value="2" />
+		<classes>
+			<class name="TC22_1_Wallet_iOS_PwalletEnhancement_MyAccount" />
+		</classes>
+	</test>
+	
+	<test name="TC23_MyAccount_iOS_CompleteMyProfile"
+		preserve-order="true">
+		<parameter name="deviceIndex" value="2" />
+		<classes>
+			<class name="TC23_MyAccount_iOS_CompleteMyProfile" />
+		</classes>
+	</test>
+
+
+
+</suite>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Parallel" preserve-order="true">
+	<!--   <test name="ParallelTestiPhoneXS">
+    <parameter name="deviceIndex" value="0"/>
+        <classes>
+            <class name="TC1_1_Negative_IncorrectEmail_Login_iOS"/>
+            <class name="TC1_2_Negative_IncorrectPassword_Login_iOS"/>
+            <class name="TC3_Delivery_iOS"/>
+            <class name="TC4_AddToCart_iOS"/>
+            <class name="TC5_Cart_iOS"/>
+        </classes>
+    </test>
+
+    <test name="ParallelTestiPhone12Pro">
+    <parameter name="deviceIndex" value="1"/>
+        <classes>
+            <class name="TC6_Checkout_inStore_iOS"/>
+            <class name="TC6_1_Checkout_Delivery_iOS"/>
+            <class name="TC7_PlaceOrder_InStore_GCash"/>
+            <class name="TC7_1_PlaceOrder_InStore_InStorePayment"/>
+            <class name="TC7_2_PlaceOrder_InStore_CreditDebitCard"/>
+            <class name="TC7_3_PlaceOrder_InStore_ZeroPayment"/>
+            <class name="TC7_4_PlaceOrder_InStore_PWallet"/>
+            <class name="TC8_PlaceOrder_Delivery_GCash"/>
+            <class name="TC8_1_PlaceOrder_Delivery_COD"/>
+            <class name="TC8_2_PlaceOrder_Delivery_CreditDebitCard"/>
+            <class name="TC8_3_PlaceOrder_Delivery_ZeroPayment"/>
+            <class name="TC8_4_PlaceOrder_Delivery_PWallet"/>
+            <class name="TC9_Orders_Reorder_iOS"/>
+            <class name="TC9_1_Orders_CancelOrder_iOS"/>
+            <class name="TC10_Wallet_SignUp_iOS"/>
+            <class name="TC10_1_Wallet_CashIn_inStore_iOS"/>
+            <class name="TC10_2_Wallet_CashIn_GCash_iOS"/>
+            <class name="TC10_3_Wallet_CashIn_CreditDebit_iOS"/>	
+            <class name="TC11_DonationDrive_RegularUser_iOS"/>
+            <class name="TC11_1_DonationDrive_GuestUser_iOS"/>
+            <class name="TC12_PureTreats_TreatForMe_iOS"/>
+            <class name="TC12_1_PureTreats_TreatForFriend_iOS"/>
+            <class name="TC13_BillsPay_ecBills_iOS"/>
+            <class name="TC13_1_BillsPay_ecCash_iOS"/>
+            <class name="TC14_LoyaltyCard_Application_TNAP_iOS"/>
+            <class name="TC14_1_LoyaltyCard_Application_PERKS_iOS"/>
+        </classes>
+    </test>
+    
+    
+  -->
+
+
+	<test name="NegativeTesting.TC1_1_Negative_IncorrectEmail_Login_iOS" preserve-order="true">
+		<parameter name="deviceIndex" value="2" />
+		<classes>
+			<class name="NegativeTesting.TC1_1_Negative_IncorrectEmail_Login_iOS" />
+		</classes>
+	</test>
+	<test name="NegativeTesting.TC1_2_Negative_IncorrectPassword_Login_iOS" preserve-order="true">
+		<parameter name="deviceIndex" value="2" />
+		<classes>
+			<class name="NegativeTesting.TC1_2_Negative_IncorrectPassword_Login_iOS" />
+		</classes>
+	</test>
+
+</suite>
