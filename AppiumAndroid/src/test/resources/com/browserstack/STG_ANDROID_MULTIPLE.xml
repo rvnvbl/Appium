@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Parallel">
+	<!--   	
+
+Classes / Test Scenarios
+<class name="TC1_0_Login_Android_LoginAsRegularUser"/>
+<class name="TC2_0_InStorePickUp_Android"/>
+<class name="TC3_0_Delivery_Android"/>
+<class name="TC4_0_AddtoCart_Android_StoreHomepage"/>
+<class name="TC4_1_AddtoCart_Android_Categories"/>
+<class name="TC5_0_Cart_Android"/>
+<class name="TC6_0_CheckOut_Android_NoPWalletBalance_PayInStore"/>
+<class name="TC6_1_CheckOut_Android_WithPWalletBalance_CashOnDelivery"/>
+<class name="TC7_0_PlaceOrder_Android_InStore_GCash"/>
+<class name="TC7_1_PlaceOrder_Android_InStore_InStorePayment"/> - Completes the
+	order, please run cancel order scenario afterwards
+<class name="TC7_2_PlaceOrder_Android_InStore_CreditDebit"/>
+<class name="TC7_3_PlaceOrder_Android_InStore_PWallet"/>
+<class name="TC7_4_PlaceOrder_Android_InStore_ZeroPayment"/> - Not Usable
+<class name="TC8_0_PlaceOrder_Android_Delivery_GCash"/>
+<class name="TC8_1_PlaceOrder_Android_Delivery_COD"/>  - Completes the
+	order,please run cancel order scenario afterwards
+<class name="TC8_2_PlaceOrder_Android_Delivery_CreditDebit"/>
+<class name="TC8_3_PlaceOrder_Android_Delivery_PWallet"/>
+<class name="TC8_4_PlaceOrder_Android_Delivery_ZeroPayment"/> - Not Usable
+<class name="TC9_0_OrdersTabAndReorder_Android"/>
+<class name="TC9_1_CancelOrder_Android"/>
+<class name="TC10_0_Wallet_Android_SignUp"/>
+<class name="TC10_1_Wallet_Android_CashIn_PayInStore"/>
+<class name="TC10_2_Wallet_Android_CashIn_GCash"/> - Not Usable
+<class name="TC10_3_Wallet_Android_CashIn_CreditDebit"/> - Not Usable
+<class name="TC11_0_DonationDrive_Android_GuestUser"/>
+<class name="TC11_1_DonationDrive_Android_RegularUser"/>
+<class name="TC12_0_PureTreats_Android_ForMe"/>
+<class name="TC12_1_PureTreats_Android_ForAFriend"/>
+<class name="TC13_0_BillsPay_Android_EcBills"/>
+<class name="TC13_1_BillsPay_Android_EcCash"/>
+<class name="TC14_0_LoyaltyCardApplication_Android_TNAP"/>
+<class name="TC14_1_LoyaltyCardApplication_Android_Perks"/>
+<class name="TC15_0_BuyLoad_Android_Regular"/>
+<class name="TC15_1_BuyLoad_Android_MobileData"/>
+
+Puregold Extension
+<class name="TC16_0_MyAccounts"/>
+<class name="TC16_1_MyAccounts_MyVoucher"/>
+<class name="TC16_2_MyAccounts_Senior_PWD"/>
+<class name="TC16_3_MyAccounts_Address"/>
+<class name="TC17_Wallet_Android_FundTransfer_SendViaID" />
+<class name="TC17_1_Wallet_Android_FundTransfer_SendViaQR" />
+<class name="TC17_2_Wallet_Android_FundTransfer_RecieveViaQR" />
+<class name="TC17_3_Wallet_Android_FundTransfer_Favorites" />
+<class name="TC18_0_CaseOrder_Android_ProductDetails" />
+<class name="TC18_1_CaseOrder_Android_StoreHomepage" />
+<class name="TC19_0_Cart_ReplacementItem" />
+<class name="TC20_Android_MaxAllocation_ViewAll" />
+<class name="TC20_1_Android_MaxAllocation_StoreHomepage" />
+<class name="TC20_2_Android_MaxAllocation_CartPage" />
+<class name="TC20_3_Android_MaxAllocation_ProductDetailsPage" />
+<class name="TC21_Pwallet_PinEnchancement_Homepage" />
+<class name="TC21_1_Pwallet_PinEnchancement_AccountPage" />
+<class name="TC22_ShopPage_MyVoucher" />
+<class name="TC23_Referral_GenerateReferral" />
+<class name="TC23_1_Referral_SuccessfulReferee" />
+<class name="TC23_2_Referral_MaxReferralReach" />
+<class name="TC23_3_Referral_RedeemReward" />
+<class name="TC24_MyAccount_CompleteMyProfile" />
+
+<class name="Workaround_EmptyCart"/> - For emptying of cart in case of errors
+	on tests
+
+Devices
+
+value="0"  -   Google Pixel 3
+value="1"  -   Samsung Galaxy S10
+value="2"  -   OnePlus 8
+value="3"  -   Samsung Galaxy S22 Ultra
+	**************************************************************************************************************************************************
+-->
+
+	<test name="TC1_0_Login_Android_LoginAsRegularUser"
+		preserve-order="true">
+		<parameter name="deviceIndex" value="3" />
+		<classes>
+			<class name="TC1_0_Login_Android_LoginAsRegularUser" />
+		</classes>
+	</test>
+
+	<test
+		name="TC2_0_InStorePickUp_Android" preserve-order="true">
+		<parameter name="deviceIndex" value="3" />
+		<classes>
+			<class name="TC2_0_InStorePickUp_Android" />
+		</classes>
+	</test>
+
+	<test
+		name="TC3_0_Delivery_Android" preserve-order="true">
+		<parameter name="deviceIndex" value="3" />
+		<classes>
+			<class name="TC3_0_Delivery_Android" />
+		</classes>
+	</test>
+
+
+	<test name="Add to Cart and Checkout Scripts" preserve-order="true">
+		<parameter name="deviceIndex" value="3" />
+		<classes>
+			<!-- Add all the classes here -->
+			<class name="TC4_0_AddtoCart_Android_StoreHomepage" />
+			<class name="TC4_1_AddtoCart_Android_Categories" />
+			<class name="TC5_0_Cart_Android" />
+			<class name="TC6_0_CheckOut_Android_NoPWalletBalance_PayInStore" />
+			<class
+				name="TC6_1_CheckOut_Android_WithPWalletBalance_CashOnDelivery" />
+		</classes>
+	</test>
+
+
+	<test name="Place Order (Instore) Scripts" preserve-order="true">
+		<parameter name="deviceIndex" value="3" />
+		<classes>
+			<!-- Add all the classes here -->
+			<class name="TC7_0_PlaceOrder_Android_InStore_GCash" />
+			<class name="TC7_1_PlaceOrder_Android_InStore_InStorePayment" />
+			<class name="TC7_2_PlaceOrder_Android_InStore_CreditDebit" />
+			<class name="TC7_3_PlaceOrder_Android_InStore_PWallet" />
+		</classes>
+	</test>
+
+
+	<test name="Place Order (Delivery) Scripts" preserve-order="true">
+		<parameter name="deviceIndex" value="3" />
+		<classes>
+			<!-- Add all the classes here -->
+			<class name="TC8_0_PlaceOrder_Android_Delivery_GCash" />
+			<class name="TC8_1_PlaceOrder_Android_Delivery_COD" />
+			<class name="TC8_2_PlaceOrder_Android_Delivery_CreditDebit" />
+			<class name="TC8_3_PlaceOrder_Android_Delivery_PWallet" />
+		</classes>
+	</test>
+
+	<test name="Reorder and Cancel Scripts" preserve-order="true">
+		<parameter name="deviceIndex" value="3" />
+		<classes>
+			<!-- Add all the classes here -->
+			<class name="TC9_0_OrdersTabAndReorder_Android" />
+			<class name="TC9_1_CancelOrder_Android" />
+		</classes>
+	</test>
+
+
+	<test name="Donation Drive Scripts" preserve-order="true">
+		<parameter name="deviceIndex" value="3" />
+		<classes>
+			<!-- Add all the classes here -->
+			<class name="TC11_0_DonationDrive_Android_GuestUser" />
+			<class name="TC11_1_DonationDrive_Android_RegularUser" />
+		</classes>
+	</test>
+
+	<test name="Puretreats Scripts" preserve-order="true">
+		<parameter name="deviceIndex" value="3" />
+		<classes>
+			<!-- Add all the classes here -->
+			<class name="TC12_0_PureTreats_Android_ForMe" />
+			<class name="TC12_1_PureTreats_Android_ForAFriend" />
+		</classes>
+	</test>
+
+	<test name="Billspay Scripts" preserve-order="true">
+		<parameter name="deviceIndex" value="3" />
+		<classes>
+			<!-- Add all the classes here -->
+			<class name="TC13_0_BillsPay_Android_EcBills" />
+			<class name="TC13_1_BillsPay_Android_EcCash" />
+		</classes>
+	</test>
+
+	<test name="Perks/Loyalty Scripts" preserve-order="true">
+		<parameter name="deviceIndex" value="3" />
+		<classes>
+			<!-- Add all the classes here -->
+			<class name="TC14_0_LoyaltyCardApplication_Android_TNAP" />
+			<class name="TC14_1_LoyaltyCardApplication_Android_Perks" />
+		</classes>
+	</test>
+
+
+	<test name="Buy Load Scripts" preserve-order="true">
+		<parameter name="deviceIndex" value="3" />
+		<classes>
+			<!-- Add all the classes here -->
+			<class name="TC15_0_BuyLoad_Android_Regular" />
+			<class name="TC15_1_BuyLoad_Android_MobileData" />
+		</classes>
+	</test>
+
+
+	<test name="My Accounts Scripts" preserve-order="true">
+		<parameter name="deviceIndex" value="3" />
+		<classes>
+			<!-- Add all the classes here -->
+			<class name="TC16_0_MyAccounts_MyProfile" />
+			<class name="TC16_1_MyAccounts_MyVoucher" />
+			<class name="TC16_2_MyAccounts_Senior_PWD" />
+			<class name="TC16_3_MyAccounts_Address" />
+		</classes>
+	</test>
+
+
+	<test name="PWallet Scripts" preserve-order="true">
+		<parameter name="deviceIndex" value="3" />
+		<classes>
+			<!-- Add all the classes here -->
+			<class name="TC10_0_Wallet_Android_SignUp" />
+			<class name="TC10_1_Wallet_Android_CashIn_PayInStore" />
+			<class name="TC17_Wallet_Android_FundTransfer_SendViaID" />
+			<class name="TC17_1_Wallet_Android_FundTransfer_SendViaQR" />
+			<class name="TC17_2_Wallet_Android_FundTransfer_RecieveViaQR" />
+			<class name="TC17_3_Wallet_Android_FundTransfer_Favorites" />
+		</classes>
+	</test>
+
+
+	<test name="Case Order Scripts" preserve-order="true">
+		<parameter name="deviceIndex" value="3" />
+		<classes>
+			<!-- Add all the classes here -->
+			<class name="TC18_1_CaseOrder_Android_StoreHomepage" />
+			<class name="TC18_0_CaseOrder_Android_ProductDetails" />
+			<class name="TC18_2_CaseOrder_Android_ReorderandCancel" />
+		</classes>
+	</test>
+
+
+	<test name="Max Allocation Scripts" preserve-order="true">
+		<parameter name="deviceIndex" value="3" />
+		<classes>
+			<!-- Add all the classes here -->
+			<class name="TC20_Android_MaxAllocation_ViewAll" />
+			<class name="TC20_1_Android_MaxAllocation_StoreHomepage" />
+			<class name="TC20_2_Android_MaxAllocation_CartPage" />
+			<class name="TC20_3_Android_MaxAllocation_ProductDetailsPage" />
+		</classes>
+	</test>
+
+	<test name="Pwallet Enhancements Scripts" preserve-order="true">
+		<parameter name="deviceIndex" value="3" />
+		<classes>
+			<!-- Add all the classes here -->
+			<class name="TC21_Pwallet_PinEnchancement_Homepage" />
+			<class name="TC21_1_Pwallet_PinEnchancement_AccountPage" />
+		</classes>
+	</test>
+
+	<test name="Referral Scripts" preserve-order="true">
+		<parameter name="deviceIndex" value="3" />
+		<classes>
+			<!-- Add all the classes here -->
+			<class name="TC23_Referral_GenerateReferral" />
+			<class name="TC23_1_Referral_SuccessfulReferee" />
+			<class name="TC23_2_Referral_MaxReferralReach" />
+			<class name="TC23_3_Referral_RedeemReward" />
+		</classes>
+	</test>
+
+
+	<test
+		name="TC24_MyAccount_CompleteMyProfile"
+		preserve-order="true">
+		<parameter name="deviceIndex" value="3" />
+		<classes>
+			<!-- Add all the classes here -->
+			<class name="TC24_MyAccount_CompleteMyProfile" />
+		</classes>
+	</test>
+
+	<test
+		name="BillsPay Maintenance Mode"
+		preserve-order="true">
+		<parameter name="deviceIndex" value="3" />
+		<classes>
+			<!-- Add all the classes here -->
+			<class name="TC25_BillsPay_Android_NoBillsPayCategory" />
+			<class name="TC25_1_BillsPay_Android_NoEcBillsCategory" />
+			<class name="TC25_2_BillsPay_Android_NoEcBillsBiller" />
+			<class name="TC25_3_BillsPay_Android_NoEcCashCategory" />
+		</classes>
+	</test>
+
+
+	<test
+		name="Checkout - Pwallet Discount"
+		preserve-order="true">
+		<parameter name="deviceIndex" value="3" />
+		<classes>
+			<!-- Add all the classes here -->
+			<class name="TC26_0_CheckOut_Android_PwalletDiscount" />
+			<class name="TC26_1_CheckOut_Android_PwalletDiscount_Value" />
+			<class name="TC26_2_CheckOut_Android_DiscountTextField" />
+		</classes>
+	</test>
+
+	<test
+		name="Pwallet Enhancements"
+		preserve-order="true">
+		<parameter name="deviceIndex" value="3" />
+		<classes>
+			<!-- Add all the classes here -->
+			<class name="TC27_Wallet_Android_PinSecurityRemoval_GeneratedQR" />
+			<class name="TC27_1_Wallet_Android_PinSecurityRemoval_ScanQR" />
+		</classes>
+	</test>
+
+
+	<test
+		name="Expired Loyal Card"
+		preserve-order="true">
+		<parameter name="deviceIndex" value="3" />
+		<classes>
+			<!-- Add all the classes here -->
+			<class name="TC28_0_MyAccounts_ExpiredPerksCard" />
+			<class name="TC28_1_Checkout_ExpiredLoyalCard" />
+		</classes>
+	</test>
+
+	<test
+		name="Sign Up / My Profile KYC Enhancements"
+		preserve-order="true">
+		<parameter name="deviceIndex" value="3" />
+		<classes>
+			<!-- Add all the classes here -->
+			<class name="TC29_0_Signup_TermsAndCondition" />
+			<class name="TC30_MyProfile_Kyc_Enhancements" />
+		</classes>
+	</test>
+
+</suite>

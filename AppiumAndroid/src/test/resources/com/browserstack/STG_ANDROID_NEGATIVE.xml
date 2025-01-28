@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Parallel" >
+	<!--   	
+
+Classes / Test Scenarios
+
+<class name="Negative_TC1_0_LoginNegativeTesting_Email_Android"/>
+<class name="Negative_TC1_1_LoginNegativeTesting_Password_Android"/>
+<class name="Negative_TC3_0_Delivery_Android"/>
+<class name="Negative_TC_AddAddress"/> 								//Not Complete - On-Going
+<class name="Workaround_EmptyCart"/> - For emptying of cart in case of errors on tests
+
+Devices
+
+value="0"  -   Google Pixel 3
+value="1"  -   Samsung Galaxy S10
+value="2"  -   OnePlus 8
+value="3"  -   Samsung Galaxy S22 Ultra
+
+-->
+
+	<test name="Negative_TC1_0_LoginNegativeTesting_Email_Android" preserve-order="true">
+		<parameter name="deviceIndex" value="3" />
+		<classes>
+			<class name="Negative_TC1_0_LoginNegativeTesting_Email_Android" />
+		</classes>
+	</test>
+	<test name="Negative_TC1_1_LoginNegativeTesting_Password_Android" preserve-order="true">
+		<parameter name="deviceIndex" value="3" />
+		<classes>
+			<class name="Negative_TC1_1_LoginNegativeTesting_Password_Android" />
+		</classes>
+	</test>
+	<test name="Negative_TC3_0_Delivery_Android" preserve-order="true">
+		<parameter name="deviceIndex" value="3" />
+		<classes>
+			<class name="Negative_TC3_0_Delivery_Android" />
+		</classes>
+	</test>
+	
+	<test name="Negative_TC_AddAddress" preserve-order="true">
+		<parameter name="deviceIndex" value="3" />
+		<classes>
+			<class name="Negative_TC_AddAddress" />
+		</classes>
+	</test>
+
+
+</suite>

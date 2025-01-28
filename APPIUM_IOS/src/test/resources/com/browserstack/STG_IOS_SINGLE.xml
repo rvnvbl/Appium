@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Parallel" preserve-order="true">
+	<!--   
+	<test name="ParallelTestiPhoneXS">
+    <parameter name="deviceIndex" value="0"/>
+        <classes>
+            <class name="TC1_Login_iOS"/>
+            <class name="TC3_Delivery_iOS"/>
+            <class name="TC4_AddToCart_Categories_iOS"/>
+            <class name="TC4_1AddToCart_StoreHomePage_iOS"/>
+            <class name="TC4_AddToCart_iOS"/>
+            <class name="TC5_Cart_iOS"/>
+            
+        </classes>
+    </test>
+
+    <test name="ParallelTestiPhone12Pro">
+    <parameter name="deviceIndex" value="1"/>
+       <classes>
+            <class name="TC6_Checkout_inStore_iOS"/>
+            <class name="TC6_1_Checkout_Delivery_iOS"/>
+            <class name="TC7_PlaceOrder_InStore_GCash"/>
+            <class name="TC7_1_PlaceOrder_InStore_InStorePayment"/> 			// Cancel after you
+	place order
+            <class name="TC7_2_PlaceOrder_InStore_CreditDebitCard"/>
+            <class name="TC7_3_PlaceOrder_InStore_ZeroPayment"/>
+            <class name="TC7_4_PlaceOrder_InStore_PWallet"/>
+            <class name="TC8_PlaceOrder_Delivery_GCash"/>
+            <class name="TC8_1_PlaceOrder_Delivery_COD"/>						// Cancel after you place order
+            <class name="TC8_2_PlaceOrder_Delivery_CreditDebitCard"/>
+            <class name="TC8_3_PlaceOrder_Delivery_ZeroPayment"/>
+            <class name="TC8_4_PlaceOrder_Delivery_PWallet"/>
+            
+
+            <class name="TC9_Orders_Reorder_iOS"/>
+            <class name="TC9_1_Orders_CancelOrder_iOS"/>      					 //Not Working
+            
+            
+            <class name="TC10_Wallet_SignUp_iOS"/>
+            <class name="TC10_1_Wallet_CashIn_inStore_iOS"/>
+            <class name="TC10_2_Wallet_CashIn_GCash_iOS"/>
+            <class name="TC10_3_Wallet_CashIn_CreditDebit_iOS"/>	
+            <class name="TC11_DonationDrive_RegularUser_iOS"/>
+            <class name="TC11_1_DonationDrive_GuestUser_iOS"/>
+            <class name="TC12_PureTreats_TreatForMe_iOS"/>
+            <class name="TC12_1_PureTreats_TreatForFriend_iOS"/>
+            <class name="TC13_BillsPay_ecBills_iOS"/>
+            <class name="TC13_1_BillsPay_ecCash_iOS"/>
+            <class name="TC14_LoyaltyCard_Application_TNAP_iOS"/>
+            <class name="TC14_1_LoyaltyCard_Application_PERKS_iOS"/>
+            <class name="TC15_1_BuyLoad_MobileData_iOS"/>  
+            <class name="TC16_0_MyAccount_myProfile"/>      
+            <class name="TC15_1_BuyLoad_MobileData_iOS"/>                   
+            <class name="TC15_1_BuyLoad_MobileData_iOS"/>      
+            
+            
+            // Extension Puregold
+            <class name="TC16_0_MyAccount_myProfile"/> 
+            <class name="TC16_1_MyAccount_MyVouchers"/>
+            <class name="TC16_2_MyAccount_Senior_PWD"/>
+            <class name="TC16_3_MyAccount_Address"/>
+            <class name="TC17_1_AskSally_GeneralInquiry"/>
+            <class name="TC18_Wallet_iOS_FundTransfer_SendViaID"/>
+            <class name="TC18_1_Wallet_iOS_FundTransfer_SendviaQR"/>     
+            <class name="TC18_2_Wallet_iOS_FundTransfer_RecieveViaQR"/> 
+            <class name="TC18_3_Wallet_iOS_FundTransfer_Favorites"/>
+            <class name="TC19_1_CaseOrder_ProductDetails"/>
+              <class name="TC19_2_CaseOrder_ReorderandCancel"/>
+            <class name="TC19_CaseOrder_Homepage"/>
+            <class name="TC20_Cart_ReplacementItem_AdvancedSearch"/>             
+            <class name="TC21_1_iOS_MaxAllocation_StoreHomepage"/>      
+            <class name="TC21_2_iOS_MaxAllocation_CartPage"/>      
+            <class name="TC21_3_iOS_MaxAllocation_ProductDetails"/>      
+            <class name="TC21_iOS_MaxAllocation_ViewAll"/> 
+            <class name="TC22_Wallet_iOS_PwalletEnhancement_Homepage"/> 
+            <class name="TC22_1_Wallet_iOS_PwalletEnhancement_MyAccount"/>
+            <class name="TC23_MyAccount_iOS_CompleteMyProfile"/>
+            <class name="TC24_Referral_iOS_SuccessfulReferral_Popup"/>
+            <class name="TC24_1_Referral_iOS_GenerateReferral"/>
+            <class name="TC24_2_Referral_iOS_RedeemReward"/>
+            <class name="TC24_3_Referral_iOS_MaxReferralReach"/>
+            
+            <class name=" TC19_2_CaseOrder_ReorderandCancel"/>     
+        </classes>
+        
+        
+	<test name="Select Script" preserve-order="true">
+		<parameter name="deviceIndex" value="2" />
+		<classes>
+			<class name="Same as test name" />
+		</classes>
+	</test>
+	
+	
+	-->
+
+	<test name="TC20_Cart_ReplacementItem_AdvancedSearch"
+		preserve-order="true">
+		<parameter name="deviceIndex" value="2" />
+		<classes>
+			<class name="TC20_Cart_ReplacementItem_AdvancedSearch" />
+		</classes>
+	</test>
+
+</suite>
